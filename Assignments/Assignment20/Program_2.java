@@ -1,42 +1,30 @@
 
-class Logic 
+class Logic
 {
-    void DisplayGrade(int marks)
-    {
 
-        if (marks >= 90 )
-        {
-            System.out.println("Grade A");
-        }
-        
-        else if(marks >= 80 )
-        {
-            System.out.println("Grade B");
-        }
+void PrintReverse(int n)
+{
+    int i =0;
 
-        else if(marks >= 70 )
-        {
-            System.out.println("Grade C");
-        }
-
-        else if(marks >= 60 )
-        {
-            System.out.println("Grade D");
-        }
-
-        else 
-        {
-            System.out.println("Grade E");
-        }
-    }
+for(i=n; i>=1 ; i--)
+{
+    
+    System.out.println( + i);   
+    
+}   
+}
 }
 
 class Program_2
 {
-    public static void main(String a[])
-    {
-        Logic lobj = new Logic();
-        lobj.DisplayGrade(87);
 
-    }
+public static void main(String A[])
+{
+    Logic lobj = new Logic();
+    lobj.PrintReverse(10);
+
+}
+
+
+
 }
