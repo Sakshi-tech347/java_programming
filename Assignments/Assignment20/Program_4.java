@@ -1,27 +1,34 @@
 
-class Logic 
+class Logic
 {
-    void PrintDigit(int num)
-    {
-      int iDigit =0;
 
-        while(num != 0)
+        void findLargestDigit(int n)
         {
-            iDigit = num % 10;
-            System.out.println(+iDigit);
-            num = num /10; 
-        }
-     
-    
-    }
+            int iDigit = 0 , max =0;
+            while(n != 0)
+            {
+                iDigit = n%10;
+                  if (iDigit > max)
+                max = iDigit;
+
+                n = n/10;
+            }
+            
+           
+            System.out.println("largest Digit in number is :"+ max);
+
+        }   
 }
+
 
 class Program_4
 {
-    public static void main(String a[])
-    {
-        Logic lobj = new Logic();
-        lobj.PrintDigit(9876);
 
-    }
+public static void main(String A[])
+{
+    Logic lobj = new Logic();
+    lobj.findLargestDigit(1345);
+
+}
+
 }
