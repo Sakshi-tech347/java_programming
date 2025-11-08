@@ -1,26 +1,44 @@
 
-class Logic 
+class Logic
 {
-    void checkDivisible(int num)
-    {
-        if((num % 5) == 0 && (num % 11) == 0)
+
+        void checkNumber(int n)
         {
-            System.out.println(" number is Divisible by 5 and 11");
-        }
-        else
-        {
-            System.out.println(" number is not Divisible by 5 and 11");
-        }
-    
-    }
+            int i =0 , iSum =0;
+
+            for(i=1; i<=(n/2) ; i++)
+            {
+            
+                    if(n%i == 0)  
+                {
+                    //System.out.println(+i);
+                    iSum = i + iSum;
+                }
+                
+            }
+
+            if(iSum == n)
+            {
+                System.out.println("it is a perfect number ");
+            }
+            else
+            
+            {
+                System.out.println("it is not perfect number ");
+            }
+            
+        }   
 }
+
 
 class Program_3
 {
-    public static void main(String a[])
-    {
-        Logic lobj = new Logic();
-        lobj.checkDivisible(55);
 
-    }
+public static void main(String A[])
+{
+    Logic lobj = new Logic();
+    lobj.checkPerfect(6);
+
+}
+
 }
