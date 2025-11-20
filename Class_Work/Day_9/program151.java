@@ -2,7 +2,8 @@ class Pattern
 {
   public void Display()
   {
-    System.out.println("inside display")
+    System.out.println("inside display");
+    //logic  of pattern
   }
 }
 class program151
