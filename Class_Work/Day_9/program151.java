@@ -1,17 +1,15 @@
 class Pattern
 {
-  public void Display()
-  {
-    System.out.println("inside display");
-    //logic  of pattern
-  }
-}
-class program151
-  {
-    public static void main (String A[] )
+    public void Display()
     {
-      Pattern pobj = new Pattern();
-      pobj.Display;
+        System.out.println("inside Display");
     }
-  }
-  
+}
+class Program151
+{
+    public static void main(String A[])
+    {
+        Pattern pobj = new Pattern();
+        pobj.Display();
+    }
+}
