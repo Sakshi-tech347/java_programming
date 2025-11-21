@@ -1,0 +1,29 @@
+
+import java.util.*;
+
+class Pattern
+{
+    public void Display(int iNo)
+    {
+        int iCnt =0 ;
+        for(iCnt = iNo; iCnt >= 1; iCnt-- )
+        {
+            System.out.print(iCnt+"\t");
+        }
+    }
+}
+class Program156
+{
+    public static void main(String A[])
+    {
+        Scanner sobj = new Scanner(System.in);
+        int iValue =0;
+
+        System.out.println("Enter the number of frequency:");
+        iValue = sobj.nextInt();
+
+        Pattern pobj =new Pattern();
+        pobj.Display(iValue);
+
+    }
+}
